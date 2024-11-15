@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/appreminder/static/css/main.4dcf30b7.css",
+    "main.js": "/appreminder/static/js/main.df5ce29f.js",
+    "index.html": "/appreminder/index.html",
+    "main.4dcf30b7.css.map": "/appreminder/static/css/main.4dcf30b7.css.map",
+    "main.df5ce29f.js.map": "/appreminder/static/js/main.df5ce29f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dcf30b7.css",
+    "static/js/main.df5ce29f.js"
+  ]
+}
