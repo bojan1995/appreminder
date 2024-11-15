@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  // Import за React Router
+import Navbar from './components/Navbar';  // Навигација
+import WordsReminder from './components/WordsReminder';  // Words Reminder компонента
+import CodingPage from './components/CodingPage';  // Code Reminder компонента
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router> 
+      <Navbar />  {/* Навигација секогаш ќе биде присутна */}
+      <Routes>
+        <Route path="/" element={<WordsReminder />} /> {/* Подразбирачка рута / */}
+        <Route path="/coding" element={<CodingPage />} /> {/* Рута за /coding */}
+      </Routes>
+    </Router>
   );
 }
 
