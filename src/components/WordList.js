@@ -1,4 +1,3 @@
-// src/components/WordList.js
 import React from "react";
 
 const WordList = ({ words, onDeleteWord, onReorderWords }) => {

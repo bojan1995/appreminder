@@ -16,8 +16,7 @@ const CodingPage = () => {
   const [codes, setCodes] = useState(getStoredCodes());
 
   useEffect(() => {
-    // Display codes from localStorage when component mounts
-    setCodes(getStoredCodes());
+    setCodes(getStoredCodes()); // Get the stored codes when the component mounts
   }, []);
 
   // Handle form submission
@@ -62,8 +61,8 @@ const CodingPage = () => {
         {codes.map((code, index) => (
           <li key={index}>
             <div className="code-content">
-              <strong><code>Code: </code> {code.title}</strong>
-              <p><b>Explanation: </b> {code.description}</p>
+              <strong><code>Code: </code>{code.title}</strong>
+              <p><b>Explanation: </b>{code.description}</p>
             </div>
           </li>
         ))}

@@ -1,6 +1,15 @@
 [build]
-  publish = "build"
+  # Command to build the project, use npm run build for React apps
   command = "npm run build"
+  
+  # Directory to publish after build (React's build folder)
+  publish = "build"
+
+[dev]
+  # Command to run locally in dev mode (start React app)
+  command = "npm start"
+  # Port number for local development
+  port = 3000
 
 [[redirects]]
   from = "/*"

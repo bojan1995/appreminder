@@ -1,4 +1,3 @@
-// src/components/WordsReminder.js
 import React, { useState, useEffect } from "react";
 import WordForm from "./WordForm";
 import WordList from "./WordList";
